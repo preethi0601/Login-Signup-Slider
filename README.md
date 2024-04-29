@@ -10,5 +10,5 @@ Features:
 - i18n for all the page texts
 - Background and icons from [SVGBackgrounds](https://www.svgbackgrounds.com/)
 
- View [here](react-slider-ten.vercel/app) 
+ View [here](https://react-slider-ten.vercel.app/) 
 
