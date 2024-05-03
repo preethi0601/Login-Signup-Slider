@@ -239,13 +239,16 @@ const Text = styled.div`
 function FormComponent() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
   return (
     <>
       {" "}
       <BackgroundBox clicked={click}>
         <ButtonAnimate clicked={click} onClick={handleClick}></ButtonAnimate>
 
-        <Form className="signin">
+        <Form className="signin" method="post" onSubmit={handleSubmit}>
           <Title>Sign In</Title>
           <Input type="email" name="email" id="emailId" placeholder="Email" />
           <Input
@@ -258,7 +261,7 @@ function FormComponent() {
           <Button>Sign In</Button>
         </Form>
 
-        <Form className="signup">
+        <Form className="signup" method="post" onSubmit={handleSubmit}>
           <Title>Sign Up</Title>
           <Input
             type="text"
