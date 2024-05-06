@@ -13,8 +13,6 @@ function FormComponent() {
     <>
       {" "}
       <BackgroundBox clicked={click}>
-        <ButtonAnimate clicked={click} onClick={handleClick}></ButtonAnimate>
-
         <Form className="signin" method="post" onSubmit={handleSubmit}>
           <Title>{t('signin')}</Title>
           <Input type="email" name="email" id="emailId" placeholder="Email" />
@@ -44,17 +42,16 @@ function FormComponent() {
             id="passwordId"
             placeholder="Password"
           />
-          <Link href="#" onClick={handleClick}>
-            {t('have_account')}
-          </Link>
           <Button>{t('signup')}</Button>
         </Form>
 
         <Text className="text1" clicked={click}>
+          <div>
           <h1>{t('welcome')}</h1>
-          <div>{t('no_account')}</div>
-          <span className="attention">{t('click')}</span>
-          <span className="attention-icon">⤶</span>
+          <p>{t('no_account')}</p>
+          </div>
+          <span class="text-4xl absolute mt-32">{t('click')}</span>
+          <ButtonAnimate className="attention-icon" onClick={handleClick}></ButtonAnimate>
         </Text>
 
         <Text className="text2" clicked={click}>
@@ -62,8 +59,8 @@ function FormComponent() {
           <div>
           {t('have_account')}
           </div>
-          <span className="attention">{t('click')}</span>
-          <span className="attention-icon">⤷</span>
+          <span class="text-4xl absolute mt-32">{t('click')}</span>
+          <ButtonAnimate className="attention-icon" onClick={handleClick}></ButtonAnimate>
         </Text>
 
         <Box1 clicked={click} />

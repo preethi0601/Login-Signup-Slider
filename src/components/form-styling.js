@@ -52,7 +52,7 @@ export const BackgroundBox = styled.div`
     transition: all 1s;
   }
   .signup {
-    position: absolute;
+    position:absolute;
     top: 0%;
     text-align: center;
     z-index: ${(props) => (props.clicked ? "500" : "-500")};
@@ -167,7 +167,6 @@ export const Input = styled.input`
 
   padding: 1rem 2rem;
   margin: 0.5rem 0;
-  width: 100%;
 
   &:focus {
     outline: none;
@@ -219,13 +218,9 @@ export const Link = styled.a`
 export const ButtonAnimate = styled.button`
   position: absolute;
   z-index: 1000;
-  height: 5rem;
-  width: 5rem;
   top: 70%;
-  border: none;
-  cursor: pointer;
 
-  right: ${(props) => (props.clicked ? "52%" : "42%")};
+  right: ${(props) => (props.clicked ? "52%" : "35%")};
 
   transform: ${(props) => (props.clicked ? "rotate(360deg)" : "rotate(0)")};
 
@@ -251,12 +246,6 @@ export const Text = styled.div`
   flex-direction: column;
   letter-spacing: 0.2rem;
   color: #fff;
-
-  .attention {
-    font-size: 2.5rem;
-    position: relative;
-    margin-top: 2rem;
-  }
 
   .attention-icon {
     position: absolute;
