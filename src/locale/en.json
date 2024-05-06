@@ -1,0 +1,12 @@
+{
+    "translation": {
+        "signin": "Sign In",
+        "signup": "Sign Up",
+        "forgot_your_password": "Forgot your Password?",
+        "welcome": "Welcome!",
+        "hello": "Hi there!",
+        "have_account": "Already have an account?",
+        "no_account": "Don't have an account?",
+        "click": "Click below"
+    }
+}
